@@ -2,10 +2,20 @@
   "name": "react-node-app",
   "version": "1.0.0",
   "description": "Starter project using React+Node.",
-  "scripts": {},
   "author": "Adrian Sanchez",
   "license": "ISC",
+
+  "scripts": {
+    "build-client": "webpack --config ./src/client/webpack.config.js",
+    "build-server": "webpack --config ./src/server/webpack.config.js",
+    "build-all": "npm run build-client & npm run build-server",
+    "build-client:w": "webpack --config ./src/client/webpack.config.js --w",
+    "build-server:w": "webpack --config ./src/server/webpack.config.js --w"
+  },
+
+
   "devDependencies": {
+    "@types/express": "^4.0.36",
     "awesome-typescript-loader": "^3.2.3",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
@@ -15,6 +25,7 @@
     "webpack": "^3.5.5"
   },
   "dependencies": {
+    "express": "^4.15.4",
     "react": "^15.6.1"
   }
 }

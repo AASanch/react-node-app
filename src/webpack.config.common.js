@@ -14,17 +14,14 @@ module.exports = {
          * can resolve path aliases.
         */
         alias: {
-			"@client": path.resolve(__dirname, "src/client/"),
-			"@server": path.resolve(__dirname, "src/server/"),
+			"@client": path.resolve(__dirname, "client/"),
+			"@server": path.resolve(__dirname, "server/"),
 		}
     },
 
-    entry: [
-        "./src/client/index"
-    ],
-
     devtool: 'source-map',
 
+    /** TS compile and linting */
     module: {
         rules: [
         {
@@ -40,9 +37,4 @@ module.exports = {
     plugins: [
         new CheckerPlugin()
     ],
-
-    output: {
-        path: __dirname + "/public",
-        filename: "bundle.js"
-    },
 };
