@@ -1,3 +1,6 @@
 export default class Temp {
-    foo = () => "bar";
+    constructor() {
+        const a = () => a;
+    }
+    public foo = () => "bar";
 }

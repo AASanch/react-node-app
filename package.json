@@ -9,6 +9,8 @@
     "awesome-typescript-loader": "^3.2.3",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "tslint": "^5.6.0",
+    "tslint-loader": "^3.5.3",
     "typescript": "^2.4.2",
     "webpack": "^3.5.5"
   },
