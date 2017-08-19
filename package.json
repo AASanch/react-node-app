@@ -2,13 +2,13 @@
   "name": "react-node-app",
   "version": "1.0.0",
   "description": "Starter project using React+Node.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "author": "Adrian Sanchez",
   "license": "ISC",
   "devDependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
     "typescript": "^2.4.2",
     "webpack": "^3.5.5"
   },

@@ -6,9 +6,18 @@
         "module": "es2015",
         "moduleResolution": "node",
         "target": "es2017",
-        "jsx": "react"
+        "jsx": "react",
+        "paths": {
+            "@client/*": ["src/client/*"],
+            "@server/*": ["src/server/*"]
+        }
     },
+
     "include": [
         "./src/**/*"
-    ]
+    ],
+
+    "awesomeTypescriptLoaderOptions": {
+        "useBabel": true
+    }
 }
