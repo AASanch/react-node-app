@@ -1,4 +1,5 @@
-const common = require("./../webpack.config.common.js");
+const path = require("path");
+const common = require("./webpack.config.common.js");
 
 module.exports = {
     ...common,
@@ -8,7 +9,7 @@ module.exports = {
     ],
 
     output: {
-        path: __dirname + "/public",
+        path: path.resolve(__dirname, "/public"),
         filename: "bundle.js"
     },
 }

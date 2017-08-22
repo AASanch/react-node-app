@@ -1,4 +1,4 @@
-var path = require("path");
+const path = require("path");
 
 // `CheckerPlugin` is optional. Use it if you want async error reporting.
 // We need this plugin to detect a `--watch` mode. It may be removed later
@@ -14,8 +14,8 @@ module.exports = {
          * can resolve path aliases.
         */
         alias: {
-			"@client": path.resolve(__dirname, "client/"),
-			"@server": path.resolve(__dirname, "server/"),
+			"@client": path.resolve(__dirname, "src/client/"),
+			"@server": path.resolve(__dirname, "src/server/"),
 		}
     },
 
