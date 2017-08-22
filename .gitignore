@@ -58,7 +58,7 @@ typings/
 .env
 
 #package-lock.json
-package.lock.json
+package-lock.json
 
 #public folder
 public/
